@@ -73,7 +73,8 @@ Steps:
 require __DIR__.'/../laravel-project/vendor/autoload.php';
 $app = require_once __DIR__.'/../laravel-project/bootstrap/app.php';
 ````
-
+require __DIR__.'/../blog/vendor/autoload.php';
+$app = require_once __DIR__.'/../blog/bootstrap/app.php';
 ---
 
 ### 5.3 Creating the Database
