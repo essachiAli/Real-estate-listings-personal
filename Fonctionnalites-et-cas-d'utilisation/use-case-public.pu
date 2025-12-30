@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Visiteur" as Visitor
+
+rectangle "RealEstate Pro\nPage Properties" {
+
+  Visitor --> (Consulter la liste des biens)
+  Visitor --> (Filtrer les annonces)
+  Visitor --> (Voir les détails d’un bien)
+
+  (Filtrer les annonces) --> (Filtrer par localisation)
+  (Filtrer les annonces) --> (Filtrer par type de bien)
+  (Filtrer les annonces) --> (Filtrer par prix)
+
+}
+
+@enduml
